@@ -81,7 +81,7 @@ if( i % 2 == 0 ){
 				  	 intro_iadificil(c);
 			 	
 				 	 }
-				////		 aca va la intro ia dificil, hay que agregar un if 
+				////	Rk	 aca va la intro ia dificil, hay que agregar un if 
 				 }
 		
 				//intro ia_dificil;
@@ -231,7 +231,7 @@ void tablero (char c[][3]){ //dibuja el tablero
 	
 }
 
-int check(char c[][3]){ //Comprueba entre los numeros disponibles para elegir si algun jugador tiene 2 'O'(primero) ó 'X'(si no hay 2'O's)y elige devolviendo z=1, saltando el turno de ia_dificil
+int check(char c[][3]){ //Comprueba entre los numeros disponibles para elegir si algun jugador tiene 2 'O'(primero) Ã³ 'X'(si no hay 2'O's)y elige devolviendo z=1, saltando el turno de ia_dificil
 
 char s[9];
 int i,z,b;
@@ -360,7 +360,7 @@ for (i=0; i<9 && z!=1; i++){
 							  	   	  z=1;
 							  	   	  
 	  	 							}
-	 			 			//fin if 5 'O'
+	 			 			//fin if 5 'O'Rk
 	 			    			}else if(s[i]=='6'){
 
 					 					 if (c[0][2] == 'O' && c[2][2] == 'O'|| c[1][0] == 'O' && c[1][1] == 'O'){
@@ -468,7 +468,7 @@ for (i=0; i<9 && z!=1; i++){
 				 	  										 c[2][1] = 'O';
 			  	   	  										 z=1;
 	  	 													 }
-	 			 									//fin if 8 'X'
+	 			 									//fin if 8 'X' Hecho por Rodrigo Kohnen
 	 			    									 }else if(s[i]=='9'){
 
 					 											 if (c[2][0] == 'X' && c[2][1] == 'X'|| c[0][0] == 'X' && c[1][1] == 'X' || c[1][2] == 'X' && c[0][2] == 'X'){
@@ -678,7 +678,7 @@ printf("%c ",so[i]);
 
 printf("\n\n");
 */
-//Comprueba si en el vector favorable hay un vector ganador para poder elegir uno de esos elementos, y señala el vector ganador acertado.
+//Comprueba si en el vector favorable hay un vector ganador para poder elegir uno de esos elementos, y seÃ±ala el vector ganador acertado.
 f = ganare(v,s);//Paso de parametros y devolucion correcta, esta funcionando hasta aca. Probado con printf en main al terminar la funcion.
 /*for(i=0;i<3;i++){
 	
@@ -769,7 +769,7 @@ v[0] = res;
 }
 	
 	
-int ganare(char v[3],char s[9]){// 2/3Correcto, Funciona bien. Comprueba si en el vector favorable hay un vector ganador para poder elegir uno de esos elementos, y señala el vector ganador acertado.
+int ganare(char v[3],char s[9]){// 2/3Correcto, Funciona bien. Comprueba si en el vector favorable hay un vector ganador para poder elegir uno de esos elementos, y seÃ±ala el vector ganador acertado.
 	
 int i, win, a, b, f;
 
@@ -963,7 +963,7 @@ if (win!=3){//V1
 								*/
 	
 							 }/*else{//V7
-	  		 				 printf("\nHas ganado. El vector ganador es el %i\n",i);
+	  		 				 printf("\nHas ganado. El vector ganador es el %i\n",i);Rk
 		   	 				 }*/
 	
 	
